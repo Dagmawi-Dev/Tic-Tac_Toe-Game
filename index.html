@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Tic <span>Tac</span> Toe</h1>
+        <div class="status-action">
+          <div class="status"></div>
+          <div class="reset">Reset</div>
+        </div>
+        <div class="game-grid">
+            <div class="game-cell"></div>
+            <div class="game-cell"></div>
+            <div class="game-cell"></div>
+            <div class="game-cell"></div>
+            <div class="game-cell"></div>
+            <div class="game-cell"></div>
+            <div class="game-cell"></div>
+            <div class="game-cell"></div>
+            <div class="game-cell"></div>
+          </div>
+          <div class="play-again" style="display:none;">Play Again</div>
+        </div>
+        <div class="name-overlay">
+          <div class="name-container">
+            <h2>Enter Player Names</h2>
+            <input type="text" id="player1Name" placeholder="Player 1 Name">
+            <div class="symbol-choice">
+              <input type="radio" id="player1X" name="player1Symbol" value="x" checked>
+              <label for="player1X">X</label>
+              <input type="radio" id="player1O" name="player1Symbol" value="o">
+              <label for="player1O">O</label>
+            </div>
+            <input type="text" id="player2Name" placeholder="Player 2 Name">
+            <div class="symbol-choice">
+              <input type="radio" id="player2X" name="player2Symbol" value="x">
+              <label for="player2X">X</label>
+              <input type="radio" id="player2O" name="player2Symbol" value="o" checked>
+              <label for="player2O">O</label>
+            </div>
+            <button id="startGame">Start Game</button>
+          </div>
+        </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
